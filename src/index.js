@@ -23,7 +23,7 @@ function getWeather(city) {
 
 // UI Logic
 
-function printError(request, city) {
+function printError(request, apiResponse, city) {
   document.querySelector('#showResponse').innerText = `There was an error accessing the weather data for ${city}:  ${request.status} ${request.statusText}: ${apiResponse.message}`;
 }
 
